@@ -21,6 +21,7 @@ def get_tokens_for_user(user):
 
 
 def send_verification_mail(instance):
+    print(instance,  "ertytrfvbgrfgthytgftyhgtftgftbrvtbgr")
     subject = "Confirm Your Email Address"
     text_content = f"Hello {instance.full_name}!\n\nThank you for registering on our website. Please confirm your email address to activate your account.\n\nClick the following link to activate your account:\n"
     from_email = settings.EMAIL_HOST_USER

@@ -7,6 +7,7 @@ from core.models import AdminProfile
 class BaseAdminPermission(permissions.BasePermission):
     def has_permission(self, request, view):
         try:
+            print(request.user.profile)
             if request.user and request.user.is_authenticated and request.user.profile:
                 return True
             else:

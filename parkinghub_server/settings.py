@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'core',
-    'rest_framework_simplejwt',  
+    'rest_framework_simplejwt',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
